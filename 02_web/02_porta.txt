@@ -1,0 +1,13 @@
+Todos processos necessitam de uma porta para se comunicar com o servidor
+Entao, cada processo utiliza de uma porta diferente
+
+Por exemplo:
+Uma máquina 1 (10.85.0.4) quer se comunicar com a máquina 2(10.85.0.5) Estão na mesma classe e na mesma rede
+Na maquina 1 está rodando Skype, Chrome, Apache e Dropbox
+A maquina 2 está rodando Github, Chrome, Node e SQL
+
+Além de saber o endereço IP que você quer se conectar, você também necessita qual o processo (que é mapeado pela porta)
+
+Então você quer acessar da maquina1, o processo Node da maquina 2 que está utilizando a porta 8080
+
+Na Maquina 1, você acessa então o endereço http://10.85.0.5:8080

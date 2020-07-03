@@ -1,0 +1,17 @@
+A Anatonia do IPv4 define 3 tipos de classes
+
+Existe os IPs e a mascara de subrede
+Onde a mascara de sub rede define qual a classe que o endereço da rede se encontra
+Nas mascaras, os bits 0 definem que é host ja o 1 definem as mascaras de Rede
+
+Classe A: 192[REDE].168.100.230[HOST]
+Mascara de subrede 255[REDE].0.0.0[HOST]
+Onde os tres primeiros digitos definem a rede e os 9 ultimos definem o Host
+
+Classe B: 192.168[REDE].100.230[HOST]
+Mascara de subrede 255.255[REDE].0.0[HOST]
+Onde os 6 primeiros digitos definem a rede e os 6 ultimos definem o Host
+
+Classe C: 192.168.100[REDE].230[HOST]
+Mascara de subrede 255.255.255[REDE].0[HOST]
+Onde os 9 primeiros digitos definem a rede e os 3 ultimos definem o Host

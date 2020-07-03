@@ -1,0 +1,20 @@
+Traduz nomes de domínios em endereços IP
+
+por exemplo: cod3r.com.br -> 54.69.61.89
+
+DNS funciona sobre o protocolo UDP na porta 53
+
+Passos:
+1- Usuario digita o dominio no browser
+2- O computador envia uma consulta DNS para o servidor local
+3- O servidor responde com o endereço IP
+4- O Computador acessa o servidor a partir do IP obtido
+
+Tipos de busca: Recursiva e Iterativa
+
+DNS Records:
+A - IPv4
+AAAA - IPv6
+MX - Servidor de Email
+NS - Servidor DNS
+CNAME - Canonical Name (Apelido)

@@ -1,0 +1,30 @@
+HTTP : Hyper Text Transfer Protocol
+
+Faz parte da camada de Aplicação
+É um protocolo Stateless - Não carrega o estado.
+Cliente-Servidor - Funciona a partir de requisições e respostas
+TCP/IP - Opera em cima da pilha TCP/IP
+Retorna conteudos para formar páginas web
+
+Fluxo de funcionamento:
+1 - Usuario informa a URL + parametros
+2 - Browser gera a Requisição
+      GET/ HTTP/ 1.1
+      Host: www.google.com
+3- Servidor Web gera a respostas    
+      HTTP/ 1.1 200 (status) OK
+      content-Type: text/html; charset=UTF-8
+      date: Mon, 30 Abril 2018 17:00:02 GMT
+      connection: close
+      conten-Lenght: 438
+      <html> ...
+4-Browser exibe a página
+
+Métodos mais importantes: GET, POST, PUT, DELETE, TRACE, OPTIONS CONNECT E HEAD
+
+Famílias de Status HTTP 
+100 - Informação
+200 - Sucesso
+300 - Redirecionamento
+400 - Erro no Cliente
+500 - Erro no Servidor
