@@ -6,6 +6,40 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+        /*
+            1. Inline
+            2. ID
+            3. Classe, Pseudo Classe, atributo
+            4. Elemento, Pseudo elemento
+        */
+        body {
+            font-size: 40px;
+        }
+
+        div {
+            background-color: #00b;
+            color: #fff;
+        }
+
+        div[wm-cor] {
+            background-color: darkorange;
+        }
+
+        div.estilo {
+            background-color: green;
+        }
+
+        #unico1,
+        #unico2 {
+            background-color: #000;
+        }
+
+        div:hover {
+            background-color: purple;
+        }
+
+        /*Se o hover for declarado antes da div[wm-cor] nao vai funcionar nessa selecao*/
+        /*hover nao funciona no unico 1 e 2 porque id tem especifidade maior*/
     </style>
 </head>
 
