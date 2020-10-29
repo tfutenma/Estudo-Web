@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <title>Altura e Largura</title>
     <style>
+        html {
+            height: 100%;
+        }
+
         body {
             font-size: 40px;
             background-color: coral;
+            height: 100%;
         }
 
         div {
@@ -17,6 +22,18 @@
         span {
             background-color: dodgerblue;
         }
+
+        span,
+        div {
+            width: 49%;
+            height: 150px;
+            height: 50%;
+            display: inline-block;
+        }
+
+        /* Display inline nao é afetado por altura e largura */
+        /* Já para percentual, o o body sempre vai basear a altura na tag html que é a altura dos elementos 
+            e se por ventura usar porcentagem, tenha em mente que o html tem que ter 100% da altura do viewport */
     </style>
 </head>
 
