@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Unidades #02</title>
     <style>
         /* ... */
+        .fora {
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+
+        .dentro {
+            background-color: mediumvioletred;
+            height: 100px;
+            width: 100%;
+            position: static;
+            /* static é o valor padrao e ocupa só o espaço do conteudo */
+            position: relative;
+            /* relative tb ocupa o espaço do conteudo*/
+            position: absolute;
+            /*absolute considera o conteudo + padding*/
+            position: fixed;
+            /*fixed considera a viewport*/
+        }
     </style>
 </head>
+
 <body>
     <div class="fora">
         <div class="dentro"></div>
     </div>
 </body>
+
 </html>
