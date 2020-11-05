@@ -13,10 +13,8 @@
 // }, 2000)
 
 
-
-
-
 let i = 1
+
 
 function esperarPor(tempo = 3000) {
       return new Promise(function (resolve) {
