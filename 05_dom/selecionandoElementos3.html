@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         form input,
         form select,
         form button {
@@ -31,7 +31,15 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms) //HTMLCollection
+        console.log(document.forms[0]) //elemento
+        console.log(document.getElementsByName('pesquisa')) //NodeList
+        console.log(document.getElementsByTagName('form')) //HTMLCollection
+        console.log(document.pesquisa) //elemento
+        console.log(document.pesquisa.q) //elemento
+        document.pesquisa.q.value = 'Linux'
+        document.pesquisa.hl.value = 'en-us'
+        console.log(document.pesquisa.hl.selectedIndex)
     </script>
 </body>
 
