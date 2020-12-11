@@ -8,5 +8,28 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
-app.get('/teste', (req, res) => res.send('Ok'))
+const multer = require('multer')
+
+const storage = multer.diskStorage({
+      destination: function (reqq, file, callback) {
+            callback(null, './upload')
+      },
+      filename: function (req, file, callback) {
+            callback(null, `${Date.now()}_${file.originalname}`)
+      }
+})
+
+const upload = multer({
+      storage
+}).single('arquivo')
+
+app.post('/upload', (req, res) => {
+      upload(req, res, err => {
+            if (err) {
+                  return res.end('Ocorreu um erro.')
+            }
+            res.end('Concluido com Sucesso.')
+      })
+})
+
 app.listen(8080, () => console.log('Executando...'))
