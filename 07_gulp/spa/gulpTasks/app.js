@@ -15,7 +15,7 @@ function appHTML() {
 }
 
 function appCSS(cb) {
-      gulp.dest('src/assets/sass/index.scss')
+      gulp.src('src/assets/sass/index.scss')
             .pipe(sass().on('error', sass.logError))
             .pipe(uglifycss({
                   "uglyComments": true
