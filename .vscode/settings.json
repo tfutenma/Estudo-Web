@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Anaconda3\\envs\\k37\\python.exe"
+    "python.pythonPath": "C:\\Anaconda3\\envs\\k37\\python.exe",
+    "compile-hero.disable-compile-files-on-did-save-code": false
 }
