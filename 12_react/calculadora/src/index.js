@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <div>
     <h1>Calculadora</h1>
-    <Calculator/>,
+    <Calculator/>
   </div>
 , document.getElementById('root')
 );
